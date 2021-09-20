@@ -1,0 +1,16 @@
+{
+    "name": "Fatura",
+    "version": "1.0.0",
+    "description": "API Documentation for Fatura backend Challenge",
+    "title": "API Documentation for Fatura backend Challenge",
+    "url": "https://0.0.0.0:3000/",
+    "sampleUrl": "https://0.0.0.0:3000/",
+    "header": {
+        "title": "Header",
+        "filename": "apiDocHeader.md"
+    },
+    "footer": {
+        "title": "Footer",
+        "filename": "apiDocFooter.md"
+    }
+}

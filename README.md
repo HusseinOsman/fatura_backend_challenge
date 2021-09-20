@@ -25,9 +25,11 @@ $ cp .env.dev .env
 $ docker-compose up --build
 ```
 
+## API Link [https://0.0.0.0:3000/](https://0.0.0.0:3000/)
+## API Docs [http://0.0.0.0:3001/](http://0.0.0.0:3001/)
 
 
-## Installation &nbsp;
+## Manual Installation &nbsp;
 **With [node](http://nodejs.org) [installed](http://nodejs.org/en/download):**
 ```sh
 # clone the latest stable release
@@ -52,6 +54,8 @@ $ npm install apidoc -g
 $ apidoc -i src/ -o apidoc/
 ```
 
+## API Link [https://0.0.0.0:3000/](https://0.0.0.0:3000/)
+## API Docs [http://0.0.0.0:3001/](http://0.0.0.0:3001/)
 
 # [<img title="Arabica.js" src="https://github.com/HusseinOsman/arabicajs/blob/master/public/images/arabica.png" width="610px" height="300px" alt="Arabica logo"/>](https://arabicajs.com)
 

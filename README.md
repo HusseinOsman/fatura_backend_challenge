@@ -23,6 +23,9 @@ $ cd fatura_backend_challenge
 $ cp .env.dev .env
 # build docker-compose image and run container for api for backend & db for mongo
 $ docker-compose up --build
+
+# to run unit testing by docker-compose:
+$ docker-compose run api npm run test
 ```
 
 ## API Link [https://0.0.0.0:3000/](https://0.0.0.0:3000/)
@@ -42,6 +45,9 @@ $ npm install
 $ npm run watch 
 # for production mode 
 $ npm run prod 
+
+# to run unit testing:
+$ npm run test
 ```
 
 ## APIDoc Generate a API Documentation &nbsp;

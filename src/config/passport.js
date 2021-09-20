@@ -51,10 +51,12 @@ passport.use(
             usernameField: 'email',
             passwordField: 'password',
             session: false,
+            passReqToCallback: true,
         },
-        async (email, password, done) => {
+        async (req, email, password, done) => {
             try {
-                const User = global.Models.users;
+                
+                const User = req.app.models.users;
 
                 const user = await User.findOne({
                     where: {

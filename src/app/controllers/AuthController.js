@@ -22,13 +22,13 @@ class AuthController extends Controller {
    * @apiParam {string}  [name]  user name.
    * @apiParam {string}  password user password.
    * 
-   * @apiBody {string}  email="admin@gmail.com"  user email.
-   * @apiBody {string}  name="admin"  user name.
+   * @apiBody {string}  email="user@gmail.com"  user email.
+   * @apiBody {string}  name="user"  user name.
    * @apiBody {string}  password="12345678" user password.
    * @apiParamExample {json} Request-Example:
    *     {
-   *       "email": "admin@gmail.com",
-   *       "name" : "admin"
+   *       "email": "user@gmail.com",
+   *       "name" : "user"
    *       "password": "12345678"
    *     }
    * @apiSuccessExample {json} Success-Response:
@@ -46,8 +46,8 @@ class AuthController extends Controller {
    *          "data": {
    *              "user": {
    *                  "id": "5ddbdf5b1a46f213e1fbe813",
-   *                  "name": "admin",
-   *                  "email": "admin@gmail.com"
+   *                  "name": "user",
+   *                  "email": "user@gmail.com"
    *              },
    *              "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZGJkZjViMWE0NmYyMTNlMWZiZTgxMyIsInVzZXIiOiJodXNzZWluIiwiaWF0IjoxNTc0Njk5NDM0LCJleHAiOjE1NzQ3ODU4MzQsImlzcyI6ImFyYWJpY2FqcyJ9.wvkEn8mPbi0S-AKLHSHi2A6xVDu26IQ5hcAOsY_pm4w",
    *              "expires_in": "1d"

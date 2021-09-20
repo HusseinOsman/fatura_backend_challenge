@@ -11,7 +11,7 @@ import http from 'http';
 import config from '../config/env';
 import fs from 'fs';
 import env from '../config/env';
-import models from '../core/loadModels';
+// import models from '../core/loadModels';
 
 const debug = debugLib('express-es6:server');
 // generated code below.
@@ -43,18 +43,18 @@ if (env.sslCert && env.sslKey) {
  * Listen on provided port, on all network interfaces.
  */
 
-models.waterline.initialize(models.config, function (err, models) {
-  if (err) throw err;
-  global.Models = app.models = models.collections;
-  app.connections = models.connections;
+// models.waterline.initialize(models.config, function (err, models) {
+//   if (err) throw err;
+//   global.Models = app.models = models.collections;
+//   app.connections = models.connections;
 
-  // Start Server
-  server.listen(port);
-});
+//   // Start Server
+//   server.listen(port);
+// });
 
 //server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+// server.on('error', onError);
+// server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.

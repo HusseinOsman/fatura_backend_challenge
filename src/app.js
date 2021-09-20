@@ -6,6 +6,9 @@ import cors from 'cors';
 import passport from 'passport';
 import indexRouter from './routes/index';
 
+import env from './config/env';
+import models from './core/loadModels';
+
 const app = express();
 
 require('./config/passport');
@@ -25,4 +28,15 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', indexRouter);
 
-export default app;
+models.waterline.initialize(models.config, function (err, models) {
+    if (err) throw err;
+    global.Models = app.models = models.collections;
+    app.connections = models.connections;
+    // seeders
+    require('./seeder')(models.collections);
+
+    // Start Server
+    // server.listen(port);
+});
+
+module.exports = app
